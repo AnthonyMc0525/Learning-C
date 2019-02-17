@@ -1,0 +1,144 @@
+//this is what a funtion looks like
+
+int main()
+{
+  printf("Hello world\n");
+
+  return 0;
+}
+
+// a file must include these things
+#include <stdio.h>
+#include <stdlib.h>
+//
+
+// variable creation
+
+type variableName = somevalue;
+
+
+
+//variable reasign
+
+variableName = anotherValue
+
+
+
+//formated string
+
+"There was once a man named %s", variableName
+%s is for string variables
+%d is for an integer number variable
+%f is for a double variable type (if you're using this within scanf() it would be %lf instead.)
+
+
+//data types (sizes are in bytes)
+
+Number types{
+int - whole number
+  signed int - size: 2 range: -32,768 to 32767
+  unsigned int - size: 2 range: 0 to 65535
+  signed short int - size: 1 range: -128 to 127
+  unsigned short int - size:1 range: 0 to 255
+  signed long int - size: 4 range: -2,147,483,648 to 2,147,483,647 
+  unsigned long int - size: 4 range 0 to 4,294,967,295
+Floating point type - stores real numbers
+  float - size: 4 range: 3.4E-38 to 3.4E+38
+  double - size: 8 range: 1.7E-308 to 1.7E+308
+  long double - size: 10 range: 3.4E-4932 to 1.1E+4932
+
+}
+
+Character types{
+  char - one character only as a string
+    signed char - size: 1 range: -128 to 127
+    unsigned char - size: 1 range: 0 to 255
+  //to have multiple characters in a string to the bellow line
+  char Variablename[] - creates a string of characters
+}
+
+Void type{
+  void - means no value. // ususally used to specify the type of functions which return nothing
+}
+
+printf
+
+Format specifiers{
+  %d - print an int
+  %s - print a string
+  %f - print a decimal number
+  %c - print a single character
+}
+
+any math operation you do with an int and a floating point number will always return a floating point number
+5 / 4 returns 1 //division between two ints will return an int value even if there is a remainder
+
+functions c gives you {
+  pow(2, 3) == 2^3
+  sqrt(36) == 6
+  ceil() - rounds up
+  floor() - rounds down
+}
+
+write a comment with /* */ this works for multiline comments
+
+to make a variable a constant(cant be changed) you have to put const before the variable type. like this: const int NUM = 3; the names of variables that are constants are by good convention all uppercase
+
+// the bottom two methods get input from the user in different ways
+scanf() - allows the user to input into the program
+you have to put what type of data you want from the user like this: scanf("%d", &variable_name)
+
+fgets(variable_name, "how many chars can be input", where to get info from(usually stdin)); - used to get strings as input from the user.
+
+//to create an array:
+first tell C what type of data you want to store: int, or char
+then the name: myArray
+then put []
+int myArray[] = {1, 2, 3, 4, 5};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
