@@ -2,19 +2,19 @@
 
 #include <stdio.h>
 
-void evenness(int n) {
+void evenness(n) {
   if (n < 0)
   {
     n = -n;
   }
   else if(n == 0)
   {
-    char even[50] = "your number is even";
+    char even[30] = "your number is even";
     printf("%s", even);
   }
   else if(n == 1)
   {
-    char odd[50] = "your number is odd";
+    char odd[30] = "your number is odd";
     printf("%s", odd);
   }
   else
@@ -25,7 +25,10 @@ void evenness(int n) {
 
 int main()
 {
-  evenness(11);
+  printf("what number would you like to be checked for evenness: ");
+  int number;
+  scanf("%d", &number);
+  evenness(number);
 
   return 0;
 }
